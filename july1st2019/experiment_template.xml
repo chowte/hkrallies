@@ -7,6 +7,13 @@
     <metric>count-die</metric>
     <metric>count-leave</metric>
     <metric>count-late</metric>
+    <metric>count-leave-CWB</metric>
+    <metric>count-leave-WC</metric>
+    <metric>count-leave-Admiralty</metric>
+    <metric>count-entry-VP</metric>
+    <metric>count-entry-Others</metric>
+    <metric>count-entry-CWB</metric>
+    <metric>count-entry-WC</metric>
     <metric>percent-done</metric>
     <metric>ticks-first-finished</metric>
     <metric>ticks-last-finished</metric>
@@ -15,13 +22,13 @@
     <metric>avgSpeed</metric>
     <metric>avgPatience</metric>
     <enumeratedValueSet variable="entry-rate">
-      <value value="1000"/>
+      <value value="$ENTRY$"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="leave-rate">
-      <value value="80"/>
+      <value value="$LEAVE$"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="total-protesters">
-      <value value="300000"/>
+      <value value="$TOTAL$"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="raster-size">
       <value value="2"/>
@@ -45,10 +52,10 @@
       <value value="5.4"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="Simulation-time-min">
-      <value value="30"/>
+      <value value="480"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="time-late-WC">
-      <value value="122"/>
+      <value value="40"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="Early-departure?">
       <value value="true"/>
